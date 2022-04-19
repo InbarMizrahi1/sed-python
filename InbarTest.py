@@ -13,7 +13,7 @@ def main():
     str=input("please insert a file name or a string: ")
     old=input("please insert the text you want to be replace: ")
     new=input("please insert the text you want to replace with: ")
-    if os.path.isfile(str):#check if it's a file to know how to print it
+    if os.path.isfile(str):    #check if it's a file to know how to print it
            with open(str,'r') as file:
                 fileInfo=file.read()
                 print("old one:\n"+ fileInfo)
